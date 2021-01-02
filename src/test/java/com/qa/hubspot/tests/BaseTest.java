@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import com.qa.hubspot.pages.Page;
 
@@ -35,6 +36,13 @@ public class BaseTest {
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
+	}
+	
+	@Test
+	public void test() {
+		System.out.println("Hi");
+		System.out.println("Helo");
+		System.out.println("bye");
 	}
 
 }
